@@ -1,0 +1,79 @@
+.girl_main{
+    min-height: 20vh;
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+    /* border: 1px solid  black; */
+}
+
+.girl_main > .filters{
+    position: sticky;
+    top: 20px;
+    height: 100%;
+    width: 300px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border-right: 1px solid rgba(0,0,0,0.3);
+}
+.girl_main > .filters > span{
+    padding: 10px 0;
+    border-bottom: 2px solid gray;
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0;
+}
+/* .girl_main > .filters > span */
+.girl_main > .products{
+    width: 100%;
+    min-height: 30vh;
+    padding: 10px 20px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /* border: 1px solid black; */
+}
+.girl_main > .products > .box{
+    padding: 10px 20px;
+    border: 1px solid rgba(0,0,0,0.2);
+}
+.girl_main > .products > .box > a > img{
+    width: 100%;
+    /* border: 1px solid red; */
+}
+.girl_main > .products > .box > .details {
+    /* background: blue; */
+    padding: 10px 0;
+}
+.girl_main > .products > .box > .details > p{
+    display: flex;
+}
+.girl_main > .products > .box > .details > p > span:first-child{
+    font-weight: 600;
+}
+.girl_main > .products > .box > .details > p > span:last-child{
+    color: red;
+}
+.girl_main > .products > .box > .details > p > span{
+    margin: 0 20px 0 0;
+}
+.girl_main > .products > .box > .details > .btnBx{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0 0 0;
+    /* background: lime; */
+    /* border: 1px solid black */
+}
+.girl_main > .products > .box > .details button:first-child{
+    background-color: #e9572b;
+    color: white;
+}
+.girl_main > .products > .box > .details button{
+    /* border: 1px solid black; */
+    padding: 4px 10px;
+    border: none;
+    border: 1px solid rgba(0,0,0,0.5)
+}

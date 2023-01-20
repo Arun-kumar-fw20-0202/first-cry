@@ -1,0 +1,158 @@
+.main{
+    min-height: 100vh;;
+    padding: 20px 0;
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #eeeeee;
+    /* border: 1px solid red; */
+}
+.main > h1{
+    font-size: 25px;
+    font-weight: 500;
+    padding: 20px 0;
+}
+.main > .box{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 80%;
+    gap: 20px;
+    /* border: 1px solid black; */
+}
+.main > .box > .card:hover{
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.main > .box > .card > img{
+    width: 400px;
+    border-radius: 5px;
+}
+.main > .box > .card > .text{
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.main > .box > .card > .text > span{
+    color: red;
+    font-weight: 500;
+    text-align: end;
+    width: 100%;
+    /* border: 1px solid black; */
+}
+
+.main > .box2{
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+    /* background-color: red; */
+}
+.main > .box2 > img{
+    width: 80%;
+}
+.main > .box2 > .cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+    gap: 5px;
+    padding: 20px 0;
+}
+.main > .box2 > .cards > img{
+    width: 300px;
+    /* border: 1px solid black; */
+}
+
+.main > .dates{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    /* border: 1px solid black; */
+}
+.main > .box3{
+    padding: 20px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* background-color:blue; */
+}
+.main > .box3 > img{
+    width: 80%;
+}
+.main > .box3 > .circle{
+    display: grid;
+    width: 80%;
+    grid-template-columns: repeat(6,1fr);
+    /* border: 1px solid black; */
+}
+.main > .box3 > .circle > img{
+    width: 100%;
+    object-fit: cover;
+    /* border: 1px solid black; */
+}
+
+.main > .box4{
+    padding: 30px 0;
+    background-color: white;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+}
+.main > .box5{
+    padding: 20px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.main > .box5 > img{
+    width: 80%;
+}
+.main > .box5 > .items{
+    display: grid;
+    width: 80%;
+    grid-template-columns: repeat(3,1fr);
+    /* border: 1px solid #000; */
+}
+.main > .box6{
+    padding: 20px 0;
+    width: 80%;
+    display: grid;
+    border: 1px solid black;
+    background-color: white;
+    grid-template-columns: repeat(7,1fr);
+}
+.main > .box6 > img{
+    width: 100%;
+}
+.main > .imgBx{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main > .imgBx > img{
+    width: 80%;
+}
+.main > .box7{
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    background-color: white;
+}
+.main > .box7 > .circle{
+    display: grid;
+    /* width: 80%; */
+    grid-template-columns: repeat(5,1fr);   
+    /* border: 1px solid black; */
+}
+.main > .box7 > .circle > img{
+    width: 100%;
+}

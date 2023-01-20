@@ -1,0 +1,16 @@
+.boys_main{
+    /* border: 1px solid black; */
+    min-height: 100vh;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.boys_main > .box{
+    width: 100%;
+    /* background: red; */
+}
+.boys_main > .box img{
+    width: 100%;
+}
