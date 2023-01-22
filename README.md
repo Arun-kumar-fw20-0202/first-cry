@@ -18,7 +18,9 @@
 # About <a href="https://www.firstcry.com/"> Firstcry.com </a>
  
 <p align="center" style="background: blue">
-<img width="50%" src="https://cdn.fcglcdn.com/brainbees/images/asia-fevrourite.png" />
+ <img width="50%" src="https://cdn.fcglcdn.com/brainbees/images/asia-fevrourite.png" />
+ <img width="50%" src="https://cdn.fcglcdn.com/brainbees/images/more-then-products.png" />
+</p>
 
 ## Things provide
 - Baby food
@@ -26,7 +28,6 @@
 - Some gifts available
 - 30+ Brand available
 
-<img width="50%" src="https://cdn.fcglcdn.com/brainbees/images/more-then-products.png" />
-<img width="50%" src="https://cdn.fcglcdn.com/brainbees/images/twenty-million.png" />
- 
- </p>
+<p align="center">
+ <img width="50%" src="https://cdn.fcglcdn.com/brainbees/images/twenty-million.png" />
+</p>
