@@ -24,7 +24,7 @@
 
 ## Things provide
 - Baby food
-- Baby Cloths age ( 6 month's to 15 year )
+- Baby Cloths for age ( 6 month's to 15 year )
 - Some gifts available
 - 30+ Brand available
 
