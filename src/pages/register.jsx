@@ -27,11 +27,11 @@ function Register() {
       if(password.length < 8){
         alert("Please check you password once !!")
       }else{
-        let check = await fetch(`http://localhost:8080/users`);
+        let check = await fetch(`https://raspberry-reindeer-cuff.cyclic.app/users`);
         let json = await check.json();
 
         if(json[0] == undefined){
-            let res = await fetch(`http://localhost:8080/users`,{
+            let res = await fetch(`https://raspberry-reindeer-cuff.cyclic.app/users`,{
               method: 'POST',
               body: JSON.stringify(uData),
               headers:{
@@ -43,7 +43,7 @@ function Register() {
           if(json[0].email == email){
             alert("user alredy exist !!")
           }else{
-            let res = await fetch(`http://localhost:8080/users`,{
+            let res = await fetch(`https://raspberry-reindeer-cuff.cyclic.app/users`,{
               method: 'POST',
               body: JSON.stringify(uData),
               headers:{

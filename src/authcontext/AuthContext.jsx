@@ -5,22 +5,39 @@ export const AuthContext = createContext()
 export default function AuthContextProvider({children}){
     const [isAuth, setIsAuth] = useState(false)
     const [user, setUser] = useState({})
+    
+    
+    // Set data to localy 
+        let userAuth = JSON.parse(localStorage.getItem('setAuth')) || []
+        const { auth, userData } = userAuth
+    // Set data to localy
 
     const LoginUser = (uData) => {
-        console.log(uData)
+        setUser(uData)
         setIsAuth(true)
-        localStorage.setItem('remember', JSON.stringify(uData));
-        localStorage.setItem('authantication', JSON.stringify(isAuth));
     }
-    const Logout = () => {
-        SetIsAuth(false)
-        localStorage.removeItem("authantication")        
-        localStorage.removeItem("remember")        
+    if(isAuth){
+        let authantication = {
+            userData: user,
+            auth: true
+        }
+        localStorage.setItem("setAuth", JSON.stringify(authantication));
+        setTimeout(function(){
+            window.location.href = "/"
+        },500)
     }
     
-    console.log(isAuth)
+    
+    const Logout = () => {
+        setIsAuth(false)
+        setUser({})
+        localStorage.removeItem("setAuth")        
+        window.location = "/login"
+    }
+
+    
     return (
-        <AuthContext.Provider value={{isAuth, user, LoginUser, Logout}}>
+        <AuthContext.Provider value={{isAuth: auth || false , user : userData, LoginUser, Logout}}>
             {children}
         </AuthContext.Provider>
     )

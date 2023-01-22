@@ -1,11 +1,24 @@
-import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
+import React, { useContext, useEffect, useState } from 'react'
+import { Link } from 'react-router-dom';
+import { AuthContext } from '../authcontext/AuthContext';
 
 function Load_products(props) {
-    const {Addtocart,image,price,desc,sprice,mprice,id} =  props
+    const { isAuth , user} = useContext(AuthContext)
+    const {handleCheck,Addtocart,handleWishlist,image,price,desc,sprice,mprice,id,newId} =  props;
 
-    let newData = {
-        image,price,desc,sprice,mprice,id,qty:1
+    let newData = {}
+    if(isAuth){
+        newData = {
+            image,
+            price,
+            desc,
+            sprice,
+            mprice,
+            id:newId,
+            qty:1, 
+            userId: user.id,
+            proId: id
+        }
     }
 
   return (
@@ -23,8 +36,10 @@ function Load_products(props) {
                         <span>( 50% off )</span>
                     </p>
                     <div className="btnBx">
-                        <button onClick={() => Addtocart(newData)}><i className='fa fa-shopping-bag'></i> Add to cart</button>
-                        <button><i className='fa fa-heart-o'></i> Wishlist</button>
+                        {isAuth ?  <button onClick={() => Addtocart(newData)}><i className='fa fa-shopping-bag'></i> Add to cart</button> :
+                         <button onClick={handleCheck}><i className='fa fa-shopping-bag'></i> Add to cart</button> }
+                       
+                        <button onClick={() => handleWishlist(id)}><i className='fa fa-heart-o'></i> Wishlist</button>
                     </div>
                 </div>
             </div>

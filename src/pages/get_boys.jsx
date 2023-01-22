@@ -36,7 +36,7 @@ function Get_boys() {
     // 
         
         const getData = () => {
-            return fetch(`https://raspberry-reindeer-cuff.cyclic.app/girls`).then((res) => res.json())
+            return fetch(`https://raspberry-reindeer-cuff.cyclic.app/boys`).then((res) => res.json())
         }
         const fetchData = async () => {
             setLoading(true)

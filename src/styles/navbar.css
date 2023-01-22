@@ -31,9 +31,6 @@ ul{
     margin-top: 0px;
    
 }
-#topNav>div{
-   
-}
 .logo{
     width: 12%;
     margin-top: 10px;
@@ -98,7 +95,7 @@ ul{
     width: 60%;
     display: flex;
     margin-left: 60px;
-    
+    /* border: 1px solid red; */
     
 }
 .manuNav>div{

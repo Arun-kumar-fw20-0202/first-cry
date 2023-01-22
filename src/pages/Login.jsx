@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 import { AuthContext } from '../authcontext/AuthContext';
 
 const user = {
-    email: "",
-    password: ""
+    email: "arun07744@gmail.com",
+    password: "123456789"
 }
 
 export default function  Login() {
@@ -22,7 +22,6 @@ export default function  Login() {
     }
     const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log(email,password)
         let temp = 0;
         let final = {}
         for(let i = 0; i <= users.length-1; i++){
@@ -33,7 +32,6 @@ export default function  Login() {
             }
         }
         if(temp == 1){
-            // alert("able to login")
             LoginUser(final)
         }else{
             alert("user not found")
@@ -41,7 +39,7 @@ export default function  Login() {
     }
 
     const getData = async () => {
-        let res = await fetch(`http://localhost:8080/users`)
+        let res = await fetch(`https://raspberry-reindeer-cuff.cyclic.app/users`)
         let json = await res.json();
         setUsers(json)
     }
