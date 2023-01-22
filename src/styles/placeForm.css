@@ -1,0 +1,53 @@
+.pForm > form{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pForm > form > .pBox > #closePlaceform{
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+}
+.pForm > form > .pBox{
+    position: relative;
+    height: 500px;
+    width: 60%;
+    padding: 20px 10px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
+.pForm > form > .pBox > .pInputBx{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    grid-template-columns: repeat(2,1fr);
+    /* border: 1px solid black; */
+}
+.pForm > form > .pBox > .pInputBx > select,
+.pForm > form > .pBox > .pInputBx > input{
+    border: 1px solid black;
+    padding: 5px 10px;
+    width: 70%;
+}
+.pForm > form > .pBox > .pInputBx > button{
+    padding: 10px 40px;
+    text-align: center;
+    background: darkorange;
+    color: white;
+    border: 1px solid black;
+}

@@ -29,7 +29,7 @@ function Navbar(){
                         </div>
                         <div>Stores & Preschools</div>
                         <div>Support</div>
-                        <div>Track Order</div>
+                        <div><Link to="/my_order" >Track Order</Link></div>
                         <div>FirstCry Parenting</div>
                         <div id="login"> {isAuth ? <Link onClick={Logout}>Logout</Link> : <Link to="/login">Login / Register</Link>}</div>
                     </>

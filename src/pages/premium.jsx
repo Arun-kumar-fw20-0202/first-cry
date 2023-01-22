@@ -1,18 +1,19 @@
+import { Link } from "react-router-dom"
 import "../styles/premium.css"
 export default function Homepremium(){
     let products = [
-        {img: "https://cdn.fcglcdn.com/brainbees/images/boutique/670x670/28855.webp", text: "The cozy Corner | 2 - 12+Y"},
-        {img: "https://cdn.fcglcdn.com/brainbees/images/boutique/670x670/28856.webp", text: "Fill Up Your Catts With Carter's I Up To 2..."},
-        {img: "https://cdn.fcglcdn.com/brainbees/images/boutique/670x670/28857.webp", text: "Stay Fit, Stay Strong | 4 - 12+Y"},
-        {img: "https://cdn.fcglcdn.com/brainbees/images/boutique/670x670/28860.webp", text: "All-Time Fun"},
-        {img: "https://cdn.fcglcdn.com/brainbees/images/boutique/670x670/28859.webp", text: "The Lounge Story I Up To 12+Y"},
-        {img: "https://cdn.fcglcdn.com/brainbees/images/boutique/670x670/28858.webp", text: "Step Up The Fashion Game I Up To 12+Y"},
-        {img: "https://cdn.fcglcdn.com/brainbees/images/boutique/670x670/28851.webp", text: "All That's stylish I Up To 12+Y"},
-        {img: "https://cdn.fcglcdn.com/brainbees/images/boutique/670x670/28850.webp", text: "Hello Discounts I Up To 12+Y"},
-        {img: "https://cdn.fcglcdn.com/brainbees/images/boutique/670x670/28849.webp", text: "Gracefully Dressed! I Up To 12+Y"},
-        {img: "https://cdn.fcglcdn.com/brainbees/images/boutique/670x670/28848.webp", text: "Organic Collection I Up To 8+Y"},
-        {img: "https://cdn.fcglcdn.com/brainbees/images/boutique/670x670/28853.webp", text: "O For organic I Up To 12Y"},
-        {img: "https://cdn.fcglcdn.com/brainbees/images/boutique/670x670/28852.webp", text: "Chill Vibes I Up To 12+Y"},
+        {img: "https://cdn.fcglcdn.com/brainbees/images/boutique/670x670/28855.webp" , navigate: "/girls_products" , text: "The cozy Corner | 2 - 12+Y"},
+        {img: "https://cdn.fcglcdn.com/brainbees/images/boutique/670x670/28856.webp" , navigate: "/boys_products" , text: "Fill Up Your Catts With Carter's I Up To 2..."},
+        {img: "https://cdn.fcglcdn.com/brainbees/images/boutique/670x670/28857.webp" , navigate: "/boys_products" , text: "Stay Fit, Stay Strong | 4 - 12+Y"},
+        {img: "https://cdn.fcglcdn.com/brainbees/images/boutique/670x670/28860.webp" , navigate: "/girls_products" , text: "All-Time Fun"},
+        {img: "https://cdn.fcglcdn.com/brainbees/images/boutique/670x670/28859.webp" , navigate: "/girls_products" , text: "The Lounge Story I Up To 12+Y"},
+        {img: "https://cdn.fcglcdn.com/brainbees/images/boutique/670x670/28858.webp" , navigate: "/girls_products" , text: "Step Up The Fashion Game I Up To 12+Y"},
+        {img: "https://cdn.fcglcdn.com/brainbees/images/boutique/670x670/28851.webp" , navigate: "/boys_products" , text: "All That's stylish I Up To 12+Y"},
+        {img: "https://cdn.fcglcdn.com/brainbees/images/boutique/670x670/28850.webp" , navigate: "/boys_products" , text: "Hello Discounts I Up To 12+Y"},
+        {img: "https://cdn.fcglcdn.com/brainbees/images/boutique/670x670/28849.webp" , navigate: "/girls_products" , text: "Gracefully Dressed! I Up To 12+Y"},
+        {img: "https://cdn.fcglcdn.com/brainbees/images/boutique/670x670/28848.webp" , navigate: "/boys_products" , text: "Organic Collection I Up To 8+Y"},
+        {img: "https://cdn.fcglcdn.com/brainbees/images/boutique/670x670/28853.webp" , navigate: "/girls_products" , text: "O For organic I Up To 12Y"},
+        {img: "https://cdn.fcglcdn.com/brainbees/images/boutique/670x670/28852.webp" , navigate: "/girls_products" , text: "Chill Vibes I Up To 12+Y"},
     ]
     let brands = [
         {img: "https://cdn.fcglcdn.com/brainbees/images/cattemplate/fashion_desktop_spring_01032022_19.jpg"},
@@ -70,7 +71,9 @@ export default function Homepremium(){
                 <div className="box">
                     {products.map((ele,i) => (
                         <div key={i} className="card">
-                            <img src={ele.img} alt="" />
+                            <Link to={`${ele.navigate}`}>
+                                <img src={ele.img} alt="" />
+                            </Link>
                             <div className="text">
                                 <h3>{ele.text}</h3>
                                 <span>New Today</span>
@@ -82,10 +85,10 @@ export default function Homepremium(){
                 <div className="box2">
                     <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/1920_179_desktop_SOI_2023_05.jpg" alt="" />
                     <div className="cards">
-                        <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/fashion_desktop_SOI_060123_05.jpg" alt="" />
-                        <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/fashion_desktop_SOI_060123_06.jpg" alt="" />
-                        <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/fashion_desktop_SOI_060123_07.jpg" alt="" />
-                        <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/fashion_desktop_SOI_060123_08.jpg" alt="" />
+                        <Link to="/boys_products"> <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/fashion_desktop_SOI_060123_05.jpg" alt="" /></Link>
+                        <Link to="/girls_products"> <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/fashion_desktop_SOI_060123_06.jpg" alt="" /></Link>
+                        <Link to="/boys_products"> <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/fashion_desktop_SOI_060123_07.jpg" alt="" /></Link>
+                        <Link to="/girls_products"> <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/fashion_desktop_SOI_060123_08.jpg" alt="" /></Link>
                     </div>
                     <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/1920_188_desktop_SOI_2023_10.jpg" alt="" />
                 </div>
@@ -123,21 +126,21 @@ export default function Homepremium(){
                 <div className="box5">
                     <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/1920_213_desktop_SOI_2023_24.jpg" alt="" />
                     <div className="items">
-                        <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/fashion_desktop_SOI_060123_25.jpg" alt="" />
-                        <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/fashion_desktop_SOI_060123_26.jpg" alt="" />
-                        <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/fashion_desktop_SOI_060123_27.jpg" alt="" />
+                        <Link to="/girls_products"><img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/fashion_desktop_SOI_060123_25.jpg" alt="" /></Link>
+                        <Link to="/girls_products"><img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/fashion_desktop_SOI_060123_26.jpg" alt="" /></Link>
+                        <Link to="/girls_products"><img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/fashion_desktop_SOI_060123_27.jpg" alt="" /></Link>
                     </div>
                     <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/winter_desktop_essentials_051122_01.jpg" alt="" />
                     <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/winter_desktop_essentials_051122_02.jpg" alt="" />
                 </div>
                 {/*  */}
                 <div className="box6">
-                    <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/winter_desktop_essentials_051122_11.jpg" alt="" />
-                    <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/winter_desktop_essentials_051122_12.jpg" alt="" />
-                    <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/winter_desktop_essentials_051122_13.jpg" alt="" />
-                    <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/winter_desktop_essentials_051122_14.jpg" alt="" />
-                    <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/winter_desktop_essentials_051122_14.jpg" alt="" />
-                    <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/winter_desktop_essentials_051122_16.jpg" alt="" />
+                    <Link to="/girls_products"><img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/winter_desktop_essentials_051122_11.jpg" alt="" /></Link>
+                    <Link to="/boys_products"><img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/winter_desktop_essentials_051122_12.jpg" alt="" /></Link>
+                    <Link to="/boys_products"><img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/winter_desktop_essentials_051122_13.jpg" alt="" /></Link>
+                    <Link to="/girls_products"><img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/winter_desktop_essentials_051122_14.jpg" alt="" /></Link>
+                    <Link to="/boys_products"><img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/winter_desktop_essentials_051122_14.jpg" alt="" /></Link>
+                    <Link to="/girls_products"><img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/winter_desktop_essentials_051122_16.jpg" alt="" /></Link>
                     <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/winter_desktop_essentials_051122_17.jpg" alt="" />
                 </div>
                 {/*  */}

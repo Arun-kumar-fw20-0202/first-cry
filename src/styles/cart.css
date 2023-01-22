@@ -1,7 +1,7 @@
 #topcart {
     width: 100%;
     height: 80px;
-    /* border: black 1px solid; */
+    border: 1px solid black ;
     display: flex;
     justify-content: space-between;
 
@@ -22,36 +22,48 @@
 
 #cartbody {
     width: 100%;
-    height: 1000px;
-    /* border: 1px solid black; */
+    min-height: 50vh;
     background-color: #f6f6f6;
     display: flex;
     flex-direction: row;
+    /* border: 1px solid black; */
 }
 
 #cartbodyleft {
     width: 65%;
+    padding: 20px 0;
     /* border: 1px solid black; */
 }
 
 #cartbodyright {
-    width: 35%;
-    /* border: 1px solid black; */
+    position: sticky;
+    top: 00px;
+    height: 100vh;
+    padding: 20px 0;
+    width: 40%;
     display: flex;
     flex-direction: column;
-    
+    align-items: center;    
+    /* border: 1px solid black; */
 }
 
 #cartbodyright>#sbiimg {
-    width: 100%;
+    width: 80%;
 }
 
 #offerimg {
     background-color: white;
     margin-top: 20px;
-    height: 40px;
+    display: flex;
+    height: auto;
     width: 80%;
     padding-left: 20px;
+}
+#offerimg > span{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* border: 1px solid black; */
 }
 
 #Accountoption {
@@ -137,8 +149,13 @@
     align-items: flex-start;
     /* border: 1px solid black; */
 }
+#itemsset > .box > .data span{
+    padding: 0 20px;
+    color: red;
+}
 #itemsset > .box > .data h3{
     padding: 10px 20px;
+    font-size: 18px;
 }
 #itemsset > .box > .data h2{
     position: relative;
@@ -168,8 +185,11 @@
     color: blue;
 }
 #couponid{
-   
-    margin-top: 50px;
+    padding: 30px 00px;
+    width: 80%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
     background-color: white;
     padding-left: 60px;
     padding-bottom: 30px;
@@ -178,9 +198,10 @@
    border-left: none;
    border-right: none;
    border-top: none;
-   width: 250px;
+   /* width: 250px; */
    border-bottom: 1px solid red;
    font-size: 17px;
+   margin-top: 20px;
 }
 #sspp{
 font-size: 17px;
@@ -191,6 +212,20 @@ padding-right: 20px;
     color: red;
     border-color: red;
     margin-left: 30px;
+}
+#paymentid{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 10px 0;
+    background-color: white;
+    gap: 10px;
+    width: 80%;
+    /* border: 1px solid black; */
+}
+#paymentid>div > h2{
+    font-size: 20px;
+    font-weight: 500;
 }
 #paymentid>div{
 display: flex;

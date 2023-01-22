@@ -6,6 +6,8 @@ import Get_boys from '../pages/get_boys'
 import Get_girls from '../pages/get_girls'
 import Girls_cloths from '../pages/girls_cloths'
 import Login from '../pages/Login'
+import Myorder from '../pages/myorder'
+import PlacedSuccessful from '../pages/Placed'
 import Homepremium from '../pages/premium'
 import Register from '../pages/register'
 import SingleProduct from '../pages/Single'
@@ -31,6 +33,8 @@ export default function Allroutes() {
         <Route path="/boys_products" element={<Get_boys />} />
         <Route path="/girls_products/:id" element={<SingleProduct />}/>
         <Route path="/boys_products/:id" element={<SingleProduct2 />}/>
+        <Route path="/orderplaced" element={<PlacedSuccessful />} />
+        <Route path="/my_order" element={<Myorder />} />
     </Routes>
   )
 }

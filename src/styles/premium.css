@@ -52,7 +52,7 @@
     align-items: center;
     /* background-color: red; */
 }
-.main > .box2 > img{
+.main > .box2 >  img{
     width: 80%;
 }
 .main > .box2 > .cards{
@@ -62,7 +62,7 @@
     gap: 5px;
     padding: 20px 0;
 }
-.main > .box2 > .cards > img{
+.main > .box2 > .cards  img{
     width: 300px;
     /* border: 1px solid black; */
 }
