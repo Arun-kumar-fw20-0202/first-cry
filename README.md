@@ -1,15 +1,20 @@
 <h1 align="center">First Cry</h1>
 
+## Languages Uses
+- Jquery
+- JavaScript
+- React
+- Chakra-UI
+- CSS
+
 ### Registration
-- Provide some details and Fill all the inputs
+- Provide some details and Fill all these inputs
 <p align="center">
  <img width="50%" src="https://i.ibb.co/Y7n6rPv/image.png" />
 </p>
 
 ## Login
-
-- Provide the same details to redirect to the landing page
-- To have more functionality
+- Provide the same details that you filled while registration
 
 <p align="center">
  <img width="50%" src="https://i.ibb.co/FKMszgB/Screenshot-20230122-061001.png" />
